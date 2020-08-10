@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1108px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.flex-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  height: 81px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background: white;
+}
+.header .col.left-menus {
+  display: flex;
+  align-items: center;
+  flex: 0 0 80%;
+}
+.header .col.left-menus .icon-header {
+  margin-right: 51px;
+}
+.header .col.left-menus .icon-header .logo {
+  max-height: 28px;
+}
+.header .col.left-menus .menus {
+  display: flex;
+}
+.header .col.left-menus .menus .menu {
+  margin-right: 32px;
+  text-decoration: none;
+  color: #000000;
+}
+.header .col.left-menus .menus .menu:last-child {
+  margin-right: 0;
+}
+.header .col.lang-section {
+  flex: 0 0 20%;
+}
+.header .col.lang-section .lang {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.banner-section {
+  padding-top: 80px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.banner-section .hero-image {
+  width: 100%;
+  object-fit: contain;
+}
+.banner-section .button-hero {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+}
+.banner-section .button-hero .link-hero {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #00aa13;
+  color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  padding: 0 2rem;
+  min-height: 40px;
+  font-size: 1rem;
+  border: unset;
+}
+
+/*# sourceMappingURL=style.css.map */
