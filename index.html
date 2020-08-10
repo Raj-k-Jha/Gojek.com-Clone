@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gojek Clone</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -82,7 +84,7 @@
                     </div>
                     <div class="links">
                         <div class="title-link">
-                            <a href="http://">Find Out Here</a>
+                            <a href="http://" class="link">Find Out Here</a>
                         </div>
                         <div class="icon">
 
@@ -110,46 +112,46 @@
     <!-- section 3  -->
     <div class="section-three">
         <div class="container">
-            <div class="wrap-slider wrap-cards-wrap">
+            <div class="cards-slider wrap-cards-wrap">
                 <div class="main-title">Our Services</div>
                 <div class="title">Transport & Logistics</div>
                 <div class="description">Moving something (or someone) from point A to point B? Our Gojek drivers in green jackets and helmets save your time, and energy.</div>
-                <div class="cards-slider">
+                <div class="wrap-slider ">
                     <div class="slide">
-                        <div class="img">
-                            <img src="" alt="" class="img">
+                        <div class="wrap-img">
+                            <img src="./assets/icons/gocar_vertical.svg" alt="" class="img">
                         </div>
                         <div class="description">
                             Over 2 million drivers nationwide are ready to drive you safely through the traffic.
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="img">
-                            <img src="" alt="" class="img">
+                        <div class="wrap-img">
+                            <img src="./assets/icons/gocar_vertical.svg" alt="" class="img">
                         </div>
                         <div class="description">
                             Over 2 million drivers nationwide are ready to drive you safely through the traffic.
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="img">
-                            <img src="" alt="" class="img">
+                        <div class="wrap-img">
+                            <img src="./assets/icons/gocar_vertical.svg" alt="" class="img">
                         </div>
                         <div class="description">
                             Over 2 million drivers nationwide are ready to drive you safely through the traffic.
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="img">
-                            <img src="" alt="" class="img">
+                        <div class="wrap-img">
+                            <img src="./assets/icons/gocar_vertical.svg" alt="" class="img">
                         </div>
                         <div class="description">
                             Over 2 million drivers nationwide are ready to drive you safely through the traffic.
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="img">
-                            <img src="" alt="" class="img">
+                        <div class="wrap-img">
+                            <img src="./assets/icons/gocar_vertical.svg" alt="" class="img">
                         </div>
                         <div class="description">
                             Over 2 million drivers nationwide are ready to drive you safely through the traffic.
@@ -318,5 +320,21 @@
         </div>
     </div>
     
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        let elem = document.querySelectorAll('.wrap-slider');
+        elem.forEach(function (el, index) { 
+
+            new Flickity( el, {
+                // options
+                cellAlign: 'left',
+                contain: true
+            });
+
+        });
+        
+
+    </script>
 </body>
 </html>
