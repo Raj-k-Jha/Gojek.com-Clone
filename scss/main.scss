@@ -237,9 +237,6 @@
 
     .container{
         .wrap-cards-wrap{
-            &.cards-slider{
-
-            }
 
             .main-title{
                 font-size: 37px;
@@ -260,12 +257,11 @@
                 margin-bottom: 32px;
             }
 
-            .wrap-slider{
+            .wrap-slider-for-all{
                 margin: 16px 16px 24px;
 
                 .slide{
-                    width: 22%;
-                    height: 289px;
+                    flex: 0 0 20%;
                     background-color: #fff;
                     background-clip: border-box;
                     border-radius: 16px;
@@ -293,6 +289,109 @@
                 }
             }
 
+            &.wrap-no-slider{
+
+                .wrap-slider-for-all{
+                    display: flex;
+                }
+            }
+
+            &.cards-slider{
+                .flickity-slider{
+                    left: 15px !important;
+                }
+
+                .slide{
+                    width: 20%;
+                }
+
+            }
+
+        }
+    }
+}
+
+.footer-wrap{
+    background-color: rgb(37, 40, 43);
+    color: white;
+    padding: 40px 0 16px 0;
+
+    .container{
+
+        .flex-wrap{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-bottom: 1px solid white;
+
+            .box{
+                flex: 0 0 33.33333%;
+
+                &.left{
+                    .icon{
+                        width: 220px;
+
+                        .img{
+                            object-fit: cover;
+                        }
+                    }
+
+                }
+
+                &.center{
+                    .menu-center-wrap{
+                        display: flex;
+                        /* align-items: center; */
+                        justify-content: center;
+                        
+                        .menu-box{
+                            flex: 0 0 50%;
+
+                            .link{
+                                display: block;
+                                text-decoration: none;
+                                color: white;
+                                font-size: .875rem;
+                                line-height: 1.25rem;
+                                margin-bottom: 24px;
+                            }
+                        }
+
+                        
+                      
+                    }
+
+                }
+
+                &.right{
+
+                    .title-footer{
+                        font-size: 1.25rem;
+                        line-height: 1.75rem;
+                        margin-bottom: 16px;
+                        display: inline-block;
+                    }
+
+                    .wrap-app-download{
+                        display: flex;
+                        width: auto;
+                        width: 100%;
+                        justify-content: space-between;
+                        margin-bottom: 16px;
+                    }
+
+                    .box-app{
+                        flex: 0 0 45%;
+
+                        .img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                }
+            }
         }
     }
 }
