@@ -53,6 +53,7 @@
 
             .menus{
                 display: flex;
+                font-weight: 300;
 
                 .menu{
                     margin-right: 32px;
@@ -255,6 +256,7 @@
                 font-size: 1.125rem;
                 line-height: 1.33;
                 margin-bottom: 32px;
+                font-weight: 300;
             }
 
             .wrap-slider-for-all{
@@ -284,6 +286,7 @@
                         font-size: 1.125rem;
                         line-height: 1.5;
                         margin-bottom: 16px;
+                        font-weight: 300;
                     
                     }
                 }
@@ -343,6 +346,7 @@
                         display: flex;
                         /* align-items: center; */
                         justify-content: center;
+                        font-weight: 200;
                         
                         .menu-box{
                             flex: 0 0 50%;
@@ -391,6 +395,22 @@
                     }
 
                 }
+            }
+        }
+
+        .footer-copyright{
+            text-align: center;
+            font-weight: 200;
+            .center-fc-title{
+                font-size: .875rem;
+                line-height: 1.25rem;
+                margin-top: 8px;
+            }
+
+            .center-fc{
+                font-size: .625rem;
+                line-height: 1.25rem;
+
             }
         }
     }
